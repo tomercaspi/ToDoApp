@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoApp</title>
+
+    <! App Template -->
+    <script id="todoItem" type="text/x-handlebars-template">
+        <div>
+            {{#if isCompleted}}
+                <button>Set Uncompleted</button>
+            {{else}}
+            {{#if !isCompleted}}
+                <button>Set Completed</button>
+            {{/if}}
+            <p>{{label}}</p>
+
+            <button>Remove</button>
+        </div>
+    </script>
+
+    <! End App Templates -->
+</head>
+<body>
+
+<script src="./lib/handlebars/handlebars.js"></script>
+<script src="./src/TestSuite.js"></script>
+<script src="./src/TodoItem.js"></script>
+
+</body>
+</html>
